@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* paleta mínima */
+:root {
+  --background: 255 255 255;
+  --foreground: 17 24 39;
+  --muted: 243 244 246;
+}
+.dark {
+  --background: 9 9 11;
+  --foreground: 229 231 235;
+  --muted: 24 24 27;
+}
+body { background-color: rgb(var(--background)); color: rgb(var(--foreground)); }
+.bg-muted { background-color: rgb(var(--muted)); }
+.text-muted-foreground { color: rgb(113 113 122); }
