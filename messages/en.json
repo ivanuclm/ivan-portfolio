@@ -1,0 +1,51 @@
+{
+  "greeting": "Hi, I'm Iván",
+  "subtitle": "Software Engineer, Web Team Lead and maker passionate about AI, IoT and UX.",
+
+  "about": "About",
+  "projects": "Projects",
+  "blog": "Blog",
+  "cv": "CV",
+  "playground": "Playground",
+  "contact": "Contact",
+
+  "language": "Language",
+  "theme": "Theme",
+
+  "ctaViewCV": "Download CV",
+  "techStack": "Key technologies",
+  "timeline": "Timeline",
+  "featuredPosts": "Recent posts",
+  "links": "Links",
+
+  "send": "Send",
+  "yourEmail": "Your email",
+  "yourMsg": "Your message",
+  "sending": "Sending…",
+  "sent": "Sent! (demo)",
+
+  "open": "Open",
+  "view": "Open",
+  "pdf": "PDF",
+  "linkedin": "LinkedIn",
+
+  "contactTitle": "Let’s talk",
+  "subject": "Subject",
+
+  "cv.summaryTitle": "Summary",
+  "cv.skillsTitle": "Skills",
+  "cv.bullet1": "Web Team Lead focused on operational excellence and UX.",
+  "cv.bullet2": "Experience in ML, computer vision and Kubernetes deployments.",
+  "cv.bullet3": "ETL integrations, ERPs, SAP B1, automation and data.",
+
+  "play.slugTitle": "Mini demo: slug generator",
+  "play.roiTitle": "Mini demo: training ROI calculator",
+  "play.hours": "Hours invested",
+  "play.rate": "Rate €/h",
+  "play.savings": "Estimated savings €",
+  "play.cost": "Cost",
+  "play.net": "Net profit",
+  "play.roiRel": "Approx. relative ROI",
+
+  "footer.note": "Built with React + Tailwind · Demo UI"
+}

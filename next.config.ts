@@ -10,7 +10,7 @@ const withMDX = createMDX({
 
 const nextConfig: NextConfig = {
   experimental: {
-    typedRoutes: true,
+    typedRoutes: false,
   },
 }
 
