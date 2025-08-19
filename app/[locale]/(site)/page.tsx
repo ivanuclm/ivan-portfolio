@@ -105,9 +105,9 @@ export default function PortfolioApp() {
             <p className="text-muted-foreground mt-1 max-w-2xl">{t("subtitle")}</p>
             <div className="flex gap-2 mt-3">
               <Button size="sm"><Download className="w-4 h-4 mr-2" /> {t("ctaViewCV")}</Button>
-              <Button size="sm" variant="secondary"><Github className="w-4 h-4 mr-2" /> GitHub</Button>
-              <Button size="sm" variant="secondary"><Linkedin className="w-4 h-4 mr-2" /> LinkedIn</Button>
-              <Button size="sm" variant="ghost"><Globe className="w-4 h-4 mr-2" /> @ivhdez</Button>
+              <Button size="sm" variant="secondary" onClick={() => window.open("https://github.com/ivanuclm", "_blank")}><Github className="w-4 h-4 mr-2" /> GitHub</Button>
+              <Button size="sm" variant="secondary" onClick={() => window.open("https://www.linkedin.com/in/ivhdez/", "_blank")}><Linkedin className="w-4 h-4 mr-2" /> LinkedIn</Button>
+              <Button size="sm" variant="ghost" onClick={() => window.open("https://ivhdez.com", "_blank")}><Globe className="w-4 h-4 mr-2" /> @ivhdez</Button>
             </div>
           </div>
 
@@ -133,12 +133,12 @@ export default function PortfolioApp() {
         {/* Tabs */}
         <Tabs defaultValue="about" className="w-full">
           <TabsList className="bg-muted p-1 rounded-xl grid grid-cols-6 sm:w-auto sm:inline-grid sm:auto-cols-auto gap-2">
-            <TabsTrigger className="data-[state=active]:bg-background data-[state=active]:shadow-sm" value="about"><Briefcase className="w-4 h-4 mr-2" />{t("about")}</TabsTrigger>
-            <TabsTrigger className="data-[state=active]:bg-background data-[state=active]:shadow-sm" value="projects"><Rocket className="w-4 h-4 mr-2" />{t("projects")}</TabsTrigger>
-            <TabsTrigger className="data-[state=active]:bg-background data-[state=active]:shadow-sm" value="blog"><Newspaper className="w-4 h-4 mr-2" />{t("blog")}</TabsTrigger>
-            <TabsTrigger className="data-[state=active]:bg-background data-[state=active]:shadow-sm" value="cv"><Download className="w-4 h-4 mr-2" />{t("cv")}</TabsTrigger>
-            <TabsTrigger className="data-[state=active]:bg-background data-[state=active]:shadow-sm" value="playground"><FlaskConical className="w-4 h-4 mr-2" />{t("playground")}</TabsTrigger>
-            <TabsTrigger className="data-[state=active]:bg-background data-[state=active]:shadow-sm" value="contact"><Mail className="w-4 h-4 mr-2" />{t("contact")}</TabsTrigger>
+            <TabsTrigger className="data-[state=active]:bg-background data-[state=active]:shadow-sm" value="about"><Briefcase className="w-4 h-4 mr-2" />{t("nav.about")}</TabsTrigger>
+            <TabsTrigger className="data-[state=active]:bg-background data-[state=active]:shadow-sm" value="projects"><Rocket className="w-4 h-4 mr-2" />{t("nav.projects")}</TabsTrigger>
+            <TabsTrigger className="data-[state=active]:bg-background data-[state=active]:shadow-sm" value="blog"><Newspaper className="w-4 h-4 mr-2" />{t("nav.blog")}</TabsTrigger>
+            <TabsTrigger className="data-[state=active]:bg-background data-[state=active]:shadow-sm" value="cv"><Download className="w-4 h-4 mr-2" />{t("nav.cv")}</TabsTrigger>
+            <TabsTrigger className="data-[state=active]:bg-background data-[state=active]:shadow-sm" value="playground"><FlaskConical className="w-4 h-4 mr-2" />{t("nav.playground")}</TabsTrigger>
+            <TabsTrigger className="data-[state=active]:bg-background data-[state=active]:shadow-sm" value="contact"><Mail className="w-4 h-4 mr-2" />{t("nav.contact")}</TabsTrigger>
           </TabsList>
 
           {/* About */}

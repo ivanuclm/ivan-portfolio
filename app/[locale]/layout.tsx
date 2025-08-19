@@ -1,27 +1,26 @@
 // app/[locale]/layout.tsx
-import {NextIntlClientProvider} from 'next-intl';
+import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
-
-const SUPPORTED = ['es','en'] as const;
-type Locale = (typeof SUPPORTED)[number];
+import {routing} from '@/i18n/routing'; // usa alias "@" a ./src (ver tsconfig)
 
 export function generateStaticParams() {
-  return SUPPORTED.map((l) => ({locale: l}));
+  return routing.locales.map((locale) => ({locale}));
 }
 
-export default async function LocaleLayout(props: {
+export default async function LocaleLayout({
+  children,
+  params
+}: {
   children: React.ReactNode;
   params: Promise<{locale: string}>;
 }) {
-  const {locale} = await props.params;
-  if (!SUPPORTED.includes(locale as Locale)) notFound();
+  const {locale} = await params;
+  if (!hasLocale(routing.locales, locale)) notFound();
 
-  // Import directo del JSON (sin getMessages)
-  const messages = (await import(`../../messages/${locale}.json`)).default;
-
+  // con el plugin + i18n/request.ts, el provider ya “ve” los messages del locale
   return (
-    <NextIntlClientProvider locale={locale as Locale} messages={messages}>
-      {props.children}
+    <NextIntlClientProvider locale={locale}>
+      {children}
     </NextIntlClientProvider>
   );
 }

@@ -2,12 +2,14 @@
   "greeting": "Hola, soy Iván",
   "subtitle": "Ingeniero Informático, Team Lead de desarrollos web y maker con pasión por IA, IoT y UX.",
 
-  "about": "Sobre mí",
-  "projects": "Proyectos",
-  "blog": "Blog",
-  "cv": "CV",
-  "playground": "Playground",
-  "contact": "Contacto",
+  "nav": {
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "blog": "Blog",
+    "cv": "CV",
+    "playground": "Playground",
+    "contact": "Contacto"
+  },
 
   "language": "Idioma",
   "theme": "Tema",
@@ -24,28 +26,32 @@
   "sending": "Enviando…",
   "sent": "¡Enviado! (demo)",
 
-  "open": "Abrir",
   "view": "Ver",
   "pdf": "PDF",
   "linkedin": "LinkedIn",
-
   "contactTitle": "Hablemos",
   "subject": "Asunto",
 
-  "cv.summaryTitle": "Resumen",
-  "cv.skillsTitle": "Competencias",
-  "cv.bullet1": "Team Lead, desarrollos web, foco en excelencia operacional y UX.",
-  "cv.bullet2": "Experiencia en ML, visión por computador y despliegues en Kubernetes.",
-  "cv.bullet3": "Integraciones ETL, ERPs, SAP B1, automatización y datos.",
+  "cv": {
+    "summaryTitle": "Resumen",
+    "skillsTitle": "Competencias",
+    "bullet1": "Team Lead, desarrollos web, foco en excelencia operacional y UX.",
+    "bullet2": "Experiencia en ML, visión por computador y despliegues en Kubernetes.",
+    "bullet3": "Integraciones ETL, ERPs, SAP B1, automatización y datos."
+  },
 
-  "play.slugTitle": "Mini demo: generador de slugs",
-  "play.roiTitle": "Mini demo: calculadora ROI de entrenamiento",
-  "play.hours": "Horas invertidas",
-  "play.rate": "Tarifa €/h",
-  "play.savings": "Ahorro estimado €",
-  "play.cost": "Coste",
-  "play.net": "Beneficio neto",
-  "play.roiRel": "ROI relativo aproximado",
+  "play": {
+    "slugTitle": "Mini demo: generador de slugs",
+    "roiTitle": "Mini demo: calculadora ROI de entrenamiento",
+    "hours": "Horas invertidas",
+    "rate": "Tarifa €/h",
+    "savings": "Ahorro estimado €",
+    "cost": "Coste",
+    "net": "Beneficio neto",
+    "roiRel": "ROI relativo aproximado"
+  },
 
-  "footer.note": "Built with React + Tailwind · Demo UI"
+  "footer": {
+    "note": "Built with React + Tailwind · Demo UI"
+  }
 }
